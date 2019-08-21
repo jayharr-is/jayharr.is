@@ -1,74 +1,85 @@
-
 <!-- saved from url=(0018)http://jayharr.is/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<title>Jay Harris</title>
+    <title>Jay Harris</title>
 
-<!-- Open Sans from Google Fonts -->
-<link href="static/style.css" rel="stylesheet" type="text/css">
+    <!-- Inter Font -->
+    <link href="static/fonts/inter.css" rel="stylesheet" type="text/css" />
 
-<!-- jQuery from Google Code -->
-<script src="static/jquery.min.js"></script>
+    <style>
+      body {
+        background: rgb(255, 247, 239);
+      }
+      * {
+        font-family: "Inter", sans-serif;
+        color: #333;
+        font-weight: 400;
+      }
+      b {
+        font-weight: 500;
+      }
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="static/bootstrap.min.css">
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+      }
 
-<!-- Bootstrap JS -->
-<script src="static/bootstrap.min.js"></script>
+      a {
+        color: #1d7fd3;
+        text-decoration: none;
+        position: relative;
+      }
 
-<!-- FontAwesome -->
-<script src="https://use.fontawesome.com/3be6b07df7.js"></script>
+      a:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid #1d7fd3;
+        opacity: 0;
+        transition: all 0.2s ease;
+      }
 
-<style>
-*{
-  font-family: 'Open Sans', sans-serif;
-}
+      a:hover:after {
+        width: 100%;
+        opacity: 1;
+      }
 
-  a{
-    color: #1d7fd3;
-    border-bottom: 1px solid #1d7fd3;
-    text-decoration: none;
-  }
+      h4 {
+        padding: 20px 0;
+      }
+      ul.link-list {
+        padding: 0;
+        list-style-type: none;
+      }
+      ul.link-list li {
+        display: inline-block;
+        padding-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="padding: 40px;">
+      <h1 style="font-size: 28px; font-weight: 300;">
+        👋 I'm Jay Harris, a designer and dev.
+      </h1>
 
-  a:hover, a:focus, a:active {
-    color: #1667ab;
-    border-bottom: 1px solid #1667ab;
-    text-decoration: none;
-  }
+      <h4 style="font-weight: 400;">
+        <b>Currently:</b> Partner at
+        <a target="_blank" href="https://nicer.io/">Nicer</a>.
+      </h4>
 
-  h4{
-    padding: 20px 0;
-  }
-    ul.link-list {
-      padding: 0;
-      list-style-type: none;
-    }
-
-    ul.link-list a {
-      border: none;
-    }
-    ul.link-list a:hover,{
-    }
-
-    li{
-      padding: 4px 0;
-    }
-</style>
-
-</head>
-<body>
-  <div class="container" style="padding-top: 40px; text-align: center;">
-  <h1>Jay Harris</h1>
-  <!-- <p style="font-style: italic;">Design + Code</p> -->
-
-  <h4>Partner and Developer at <a target="_blank" href="https://nicer.io/">Nicer</a>.</h4>
-
-  <ul class="link-list">
-    <li data-id="5"><a target="_blank" href="https://twitter.com/jayharr_is"><i class="fa fa-twitter "></i> • jayharr_is</a></li>
-    <!-- <li data-id="6"><a target="_blank" href="https://behance.net/jhartist"><i class="fa fa-behance "></i> • jhartist</a></li> -->
-    <li data-id="7"><a target="_blank" href="https://github.com/jayharr-is"><i class="fa fa-github "></i> • jayharr-is</a></li>
-  </ul>
-</div>
-
-
-</body></html>
+      <ul class="link-list">
+        <li>
+          <a target="_blank" href="https://twitter.com/jayharr_is">Twitter</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://instagram.com/jayharr_is">Insta</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
